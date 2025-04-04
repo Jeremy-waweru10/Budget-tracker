@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  #form-section input, #form-section button {
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  #transaction-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .income { color: green; }
+  .expense { color: red; }
+  
