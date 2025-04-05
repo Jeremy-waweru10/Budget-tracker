@@ -1,59 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    padding: 20px;
-  }
-  
-  .container {
-    max-width: 600px;
-    background: white;
-    padding: 20px;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  form {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  input, button {
-    padding: 10px;
-    font-size: 1rem;
-  }
-  
-  #transaction-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  #transaction-list li {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .income {
-    background: #d4f8d4;
-    color: green;
-  }
-  
-  .expense {
-    background: #f8d4d4;
-    color: red;
-  }
-  
-  .filters button {
-    margin: 5px;
-  }
-  
-  .totals {
-    margin-top: 20px;
-    font-size: 1.1rem;
-  }
-  
+body { 
+  font-family: Arial, sans-serif;
+  background: skyblue;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+input:hover, button:hover {
+  border-color: #007BFF; /* Blue border on hover */
+  background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+button {
+  cursor: pointer;
+  background-color: skyblue;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0066cc; /* Darker blue on hover */
+}
+
+#transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+#transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#transaction-list li:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.income {
+  background: #d4f8d4;
+  color: green;
+}
+
+.expense {
+  background: #f8d4d4;
+  color: red;
+}
+
+.filters button {
+  margin: 5px;
+  background-color: skyblue;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #007BFF; /* Blue background on hover */
+  color: white;
+}
+
+.totals {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
   
